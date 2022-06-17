@@ -1,3 +1,5 @@
+docker cp alluxio-master:/opt/alluxio/client/alluxio-2.8.0-client.jar ./
+
 docker cp alluxio-2.8.0-client.jar spark-master:/spark
 docker cp alluxio-2.8.0-client.jar spark-worker1:/spark
 docker cp alluxio-2.8.0-client.jar spark-worker2:/spark
