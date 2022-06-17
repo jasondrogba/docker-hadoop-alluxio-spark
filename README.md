@@ -75,8 +75,7 @@ First, start spark:
 ```
 Enter the spark-master container, and run spark-shell:
 ```
-docker exec -it spark-master bash:
-```
+docker exec -it spark-master bash
 cd /spark && ./bin/spark-shell
 ```
 Run the following commands from spark-shell:
