@@ -138,17 +138,18 @@ services:
     env_file:
       - ./hadoop.env
       
-  zeppelin:
-    image: bde2020/zeppelin:0.8.0-hadoop-2.8.0-spark-2.3.1
-    ports:
-      - 80:8080
-    volumes:
-      - ./notebook:/opt/zeppelin/notebook
-    environment:
-      SPARK_MASTER: "spark://spark-master:7077"
-      MASTER: "spark:spark-master:7077"
-    env_file:
-      - ./hadoop.env
+  # zeppelin:
+  #   image: apache/zeppelin:0.10.0
+  #   ports:
+  #     - 80:8080
+  #   volumes:
+  #     - ./notebook:/opt/zeppelin/notebook
+  #   environment:
+  #     SPARK_MASTER: "spark://spark-master:7077"
+  #     MASTER: "spark://spark-master:7077"
+  #     ZEPPELIN_SPARK_USEHIVECONTEXT: "false"
+  #   env_file:
+  #     - ./hadoop.env
 
 
 volumes:
